@@ -1,0 +1,17 @@
+INTERNET SERVICE INFORMATION
+
+Fiber optic:
+- High-speed internet service.
+- Suitable for customers requiring high bandwidth.
+- Can be appropriate for streaming, gaming, and multiple connected devices.
+
+DSL:
+- Broadband internet service.
+- Suitable for customers with moderate internet requirements.
+
+No internet service:
+- Customers without internet service may have different product requirements.
+- Do not recommend an internet upgrade unless it matches the customer's needs.
+
+Recommendation guideline:
+Before recommending an internet plan, understand the customer's usage requirements and current service experience.

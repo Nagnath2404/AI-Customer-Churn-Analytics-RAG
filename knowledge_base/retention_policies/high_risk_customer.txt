@@ -1,0 +1,37 @@
+HIGH-RISK CUSTOMER RETENTION POLICY
+
+Purpose:
+This policy provides recommended actions for customers identified as high churn risk.
+
+High-risk definition:
+A customer is considered high risk when the predicted churn probability is 70% or higher.
+
+Recommended actions:
+
+1. Review the customer's contract type.
+2. Review the customer's tenure.
+3. Review monthly charges.
+4. Check whether technical support and online security services are enabled.
+5. Review the customer's payment method.
+6. Contact the customer with a personalized retention offer.
+
+Month-to-month customers:
+Customers on month-to-month contracts should be encouraged to consider one-year or two-year contracts when appropriate.
+
+New customers:
+Customers with low tenure should receive additional onboarding and support because early-stage customers may require additional assistance.
+
+High monthly charges:
+Customers with relatively high monthly charges should be reviewed for suitable plans or bundles that provide better perceived value.
+
+Technical support:
+If technical support is not active, explain available support options and determine whether support services could improve the customer's experience.
+
+Online security:
+If online security is not active, explain available security features and recommend an appropriate security package when relevant.
+
+Payment method:
+If the customer uses electronic check, verify that billing is working correctly and explain available automatic payment options.
+
+Important:
+Retention actions should be personalized. Do not automatically provide discounts to every high-risk customer.

@@ -1,0 +1,15 @@
+pandas
+numpy
+matplotlib
+seaborn
+scikit-learn
+sqlalchemy
+pymysql
+fastapi
+uvicorn
+pydantic
+python-dotenv
+joblib
+langchain
+langchain-community
+chromadb

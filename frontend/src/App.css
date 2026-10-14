@@ -1,0 +1,521 @@
+/* ================================
+   GLOBAL
+================================ */
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f4f7fb;
+  color: #1f2937;
+  overflow-x: hidden;
+}
+
+.app {
+  min-height: 100vh;
+}
+
+
+/* ================================
+   HEADER
+================================ */
+
+header {
+  background: #111827;
+  color: white;
+  padding: 32px 6%;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 32px;
+  line-height: 1.2;
+}
+
+header p {
+  margin: 10px 0 0;
+  color: #d1d5db;
+  font-size: 16px;
+}
+
+
+/* ================================
+   MAIN LAYOUT
+================================ */
+
+main {
+  width: 92%;
+  max-width: 1250px;
+  margin: 30px auto;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 25px;
+  align-items: start;
+}
+
+
+/* ================================
+   CARD
+================================ */
+
+.card {
+  min-width: 0;
+  width: 100%;
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+}
+
+.card h2 {
+  margin-top: 0;
+  margin-bottom: 22px;
+  font-size: 22px;
+}
+
+
+/* ================================
+   FORM
+================================ */
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 15px;
+}
+
+.form-group {
+  min-width: 0;
+  margin-bottom: 4px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #374151;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  min-width: 0;
+  height: 42px;
+  padding: 9px 11px;
+  border: 1px solid #d1d5db;
+  border-radius: 7px;
+  background: white;
+  color: #111827;
+  font-size: 14px;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  outline: none;
+  border-color: #2563eb;
+  box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.1);
+}
+
+
+/* ================================
+   BUTTON
+================================ */
+
+button {
+  width: 100%;
+  height: 46px;
+  margin-top: 22px;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 7px;
+  background: #2563eb;
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+button:hover {
+  background: #1d4ed8;
+}
+
+button:disabled {
+  background: #9ca3af;
+  cursor: not-allowed;
+}
+
+
+/* ================================
+   RESULT CARD
+================================ */
+
+.result-card {
+  min-width: 0;
+  overflow: hidden;
+}
+
+
+/* ================================
+   RISK CARD
+================================ */
+
+.risk-card {
+  width: 100%;
+  padding: 24px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.risk-card .risk-label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.risk-card strong {
+  display: block;
+  font-size: 32px;
+  line-height: 1.2;
+}
+
+.risk-card.high {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+.risk-card.medium {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+.risk-card.low {
+  background: #dcfce7;
+  color: #166534;
+}
+
+
+/* ================================
+   RESULT ITEMS
+================================ */
+
+.result-item {
+  width: 100%;
+  min-width: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  padding: 14px 16px;
+  margin-bottom: 10px;
+  background: #f3f4f6;
+  border-radius: 7px;
+}
+
+.result-item strong {
+  font-size: 14px;
+}
+
+.result-item span {
+  max-width: 55%;
+  font-weight: 700;
+  text-align: right;
+  overflow-wrap: anywhere;
+}
+
+
+/* ================================
+   AI RECOMMENDATION
+================================ */
+
+.recommendation {
+  width: 100%;
+  min-width: 0;
+  max-width: 100%;
+  margin-top: 25px;
+  padding: 20px;
+  background: #f9fafb;
+  border-left: 4px solid #2563eb;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.recommendation h2 {
+  margin-bottom: 15px;
+  font-size: 19px;
+}
+
+.recommendation pre {
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+
+  /* Important: prevents long AI sentences from going outside */
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  line-height: 1.7;
+  color: #374151;
+}
+
+
+/* ================================
+   RESPONSIVE TABLET
+================================ */
+
+@media (max-width: 900px) {
+  main {
+    width: 94%;
+    grid-template-columns: 1fr;
+  }
+
+  .form-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+
+/* ================================
+   RESPONSIVE MOBILE
+================================ */
+
+@media (max-width: 600px) {
+  header {
+    padding: 25px 5%;
+  }
+
+  header h1 {
+    font-size: 25px;
+  }
+
+  header p {
+    font-size: 14px;
+  }
+
+  main {
+    width: 94%;
+    margin: 20px auto;
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    padding: 18px;
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .result-item {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .result-item span {
+    max-width: 100%;
+    text-align: left;
+  }
+
+  .recommendation {
+    padding: 15px;
+  }
+}
+
+
+
+
+
+
+
+/* ================================
+   SECTION TITLE
+================================ */
+
+.section-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 22px;
+}
+
+.section-title h2 {
+  margin: 0;
+}
+
+.section-title span {
+  padding: 5px 10px;
+  background: #eef2ff;
+  color: #4338ca;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+
+/* ================================
+   METRICS
+================================ */
+
+.metrics {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.metric-card {
+  padding: 18px;
+  background: #f3f4f6;
+  border-radius: 9px;
+}
+
+.metric-card span {
+  display: block;
+  margin-bottom: 7px;
+  color: #6b7280;
+  font-size: 13px;
+}
+
+.metric-card strong {
+  font-size: 20px;
+}
+
+
+/* ================================
+   PROBABILITY
+================================ */
+
+.probability-section {
+  margin-bottom: 25px;
+}
+
+.probability-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+.probability-header strong {
+  font-size: 14px;
+}
+
+.probability-bar {
+  width: 100%;
+  height: 12px;
+  background: #e5e7eb;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.probability-fill {
+  height: 100%;
+  border-radius: 20px;
+  transition: width 0.5s ease;
+}
+
+.probability-fill.high {
+  background: #dc2626;
+}
+
+.probability-fill.medium {
+  background: #d97706;
+}
+
+.probability-fill.low {
+  background: #16a34a;
+}
+
+
+/* ================================
+   AI SECTION
+================================ */
+
+.ai-section {
+  margin-top: 10px;
+}
+
+.ai-section > h2 {
+  font-size: 20px;
+  margin-bottom: 18px;
+}
+
+.ai-block {
+  padding: 17px;
+  margin-bottom: 13px;
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  min-width: 0;
+}
+
+.ai-block h3 {
+  margin: 0 0 10px;
+  font-size: 15px;
+  color: #111827;
+}
+
+.ai-block p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.7;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+.ai-block ul,
+.ai-block ol {
+  margin: 0;
+  padding-left: 22px;
+}
+
+.ai-block li {
+  margin-bottom: 9px;
+  font-size: 14px;
+  line-height: 1.6;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+.ai-block li:last-child {
+  margin-bottom: 0;
+}
+
+
+/* ================================
+   MOBILE
+================================ */
+
+@media (max-width: 600px) {
+
+  .metrics {
+    grid-template-columns: 1fr;
+  }
+
+  .section-title {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+}

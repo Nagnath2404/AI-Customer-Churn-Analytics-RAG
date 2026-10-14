@@ -1,0 +1,48 @@
+Feature,Importance
+categorical__Contract_Month-to-month,0.3339243926755331
+numerical__Tenure Months,0.13937105857958434
+categorical__Internet Service_Fiber optic,0.07683511533517427
+numerical__Monthly Charges,0.06388833495770223
+categorical__Online Security_No,0.0638600618029673
+numerical__Total Charges,0.05448909814902785
+categorical__Dependents_Yes,0.04709336820097769
+categorical__Tech Support_No,0.04598232598668549
+categorical__Payment Method_Electronic check,0.04496382370319431
+categorical__Dependents_No,0.040068234076549025
+numerical__CLTV,0.024766277880057162
+categorical__Paperless Billing_No,0.009282540584131103
+categorical__Multiple Lines_No,0.008757478026687701
+categorical__Paperless Billing_Yes,0.007019225822738804
+categorical__Online Backup_No,0.0067067959246933945
+categorical__Streaming Movies_Yes,0.005758753473854797
+categorical__Contract_Two year,0.005481302436070357
+categorical__Partner_No,0.00412951654008103
+categorical__Contract_One year,0.0025010695388370274
+categorical__Streaming TV_Yes,0.0024764194615920256
+categorical__Partner_Yes,0.0024278920042731795
+categorical__Gender_Male,0.00208599833913593
+categorical__Gender_Female,0.0018779776304900814
+categorical__Senior Citizen_Yes,0.0014668611967746624
+categorical__Payment Method_Bank transfer (automatic),0.0011125757090102192
+categorical__Senior Citizen_No,0.0009803189104377187
+categorical__Phone Service_Yes,0.0006119306390156454
+categorical__Tech Support_Yes,0.0005445267878338342
+categorical__Device Protection_No,0.00030670852675683405
+categorical__Internet Service_DSL,0.0002616791631691783
+categorical__Payment Method_Credit card (automatic),0.00022014742840513547
+categorical__Online Backup_Yes,0.00020815265065721804
+categorical__Phone Service_No,0.0002032308327661239
+categorical__Multiple Lines_No phone service,0.00012650389367509872
+categorical__Device Protection_Yes,8.305432860993944e-05
+categorical__Online Security_Yes,8.088855323824637e-05
+categorical__Multiple Lines_Yes,3.246753182491246e-05
+categorical__Payment Method_Mailed check,1.3892717787067839e-05
+categorical__Internet Service_No,0.0
+categorical__Tech Support_No internet service,0.0
+categorical__Device Protection_No internet service,0.0
+categorical__Online Backup_No internet service,0.0
+categorical__Online Security_No internet service,0.0
+categorical__Streaming Movies_No,0.0
+categorical__Streaming Movies_No internet service,0.0
+categorical__Streaming TV_No,0.0
+categorical__Streaming TV_No internet service,0.0

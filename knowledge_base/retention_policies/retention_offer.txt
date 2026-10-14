@@ -1,0 +1,23 @@
+RETENTION OFFER GUIDELINES
+
+Retention offers should be personalized according to customer risk and circumstances.
+
+High-risk customers may be considered for:
+- Suitable plan upgrades
+- Contract incentives
+- Service bundles
+- Technical support assistance
+- Personalized customer service
+
+Offer priority should consider:
+1. Churn probability
+2. Contract type
+3. Customer tenure
+4. Monthly charges
+5. Service configuration
+6. Customer support requirements
+
+Important:
+Do not automatically offer a discount to every customer.
+
+The retention team should select an appropriate action based on the customer's situation and company policy.
